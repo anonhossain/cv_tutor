@@ -7,8 +7,8 @@ import PyPDF2 as pdf
 import env
 from prompt import *  # Import the prompt functions
 
-CV_FILE = "./files/resume/resume.pdf"
-JD_FILE = "./files/jd/jd.txt"
+CV_FILE = env.CV_FILE
+JD_FILE = env.JD_FILE
 
 genai.configure(api_key=env.GOOGLE_API_KEY)
 
