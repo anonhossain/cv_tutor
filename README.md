@@ -27,7 +27,7 @@ _A clean, welcoming interface to introduce users to the tool._
 
 ### 2. Dashboard
 
-![Dashboard]([SS2.png](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Dashboard.png))  
+![Dashboard](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Dashboard.png)
 _The main workspace where users enter data and receive AI suggestions._
 
 Includes:
