@@ -20,7 +20,7 @@ This project is an AI-powered tool designed to help job seekers enhance their re
 
 ### 1. Landing Page
 
-![Landing Page]([Screenshot1.png](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Landing%20Page.png))  
+![Landing Page]((https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Landing%20Page.png))  
 _A clean, welcoming interface to introduce users to the tool._
 
 ---
