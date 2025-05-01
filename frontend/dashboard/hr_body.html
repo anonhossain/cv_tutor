@@ -22,25 +22,30 @@
                 <input type="file" id="resume-upload" name="resumes" accept="application/pdf" multiple>
             </div>
 
-            <div class="button-section">
+            <div class="button-section1">
                 <button class="btn" type="submit">Upload Files</button>
             </div>
         </form>
 
         <!-- Other Functionalities -->
         <br>
-        <div class="button-section">
-            <button id="analyze_existing" class="btn" type="button" onclick="sendAction('show_match')">Show Match</button>
-        </div>
+       
 
         <br>
 
         <div class="button-section">
-            <button class="smbtn" type="button" onclick="sendAction('skills_suggestion')">Skill Suggestions</button>
-            <button class="smbtn" type="button" onclick="sendAction('project_suggestion')">Project Suggestion</button>
+            <button id="analyze_existing" class="smbtn" type="button" onclick="sendAction('show_match')">Show Match</button>
+            <button id="skills_suggestion" class="smbtn" type="button" onclick="sendAction('skills_suggestion')">Skills Suggestion</button>
+            <button id="project_suggestion" class="smbtn" type="button" onclick="sendAction('project_suggestion')">Project Suggestion</button>
+            <button id="draft_cover_letter" class="smbtn" type="button" onclick="sendAction('draft_cover_letter')">Draft Cover Letter</button>
+            <button id="draft_email" class="smbtn" type="button" onclick="sendAction('draft_email')">Draft Email</button>
+            <button id="question_generation" class="smbtn" type="button" onclick="sendAction('question_generation')">Question Generation</button>
+
+            <!-- <button class="smbtn" type="button" onclick="sendAction('skills_suggestion')">Skill Suggestions</button> -->
+            <!-- <button class="smbtn" type="button" onclick="sendAction('project_suggestion')">Project Suggestion</button>
             <button class="smbtn" type="button" onclick="sendAction('draft_cover_letter')">Cover Letter</button>
             <button class="smbtn" type="button" onclick="sendAction('draft_email')">Draft Email</button>
-            <button class="smbtn" type="button" onclick="sendAction('question_generation')">Generate Questions</button>
+            <button class="smbtn" type="button" onclick="sendAction('question_generation')">Generate Questions</button> -->
         </div>
 
         <br><br>
@@ -61,7 +66,7 @@
                 <animate attributeName="stroke-dashoffset" calcMode="spline" dur="2" values="685;-685" keySplines="0 0 1 1" repeatCount="indefinite"></animate>
             </path>
         </svg>
-        <p>Analysing All CVs...</p>
+        <p>Analysing Your CV...</p>
     </div>
 
     <!-- Results Table -->

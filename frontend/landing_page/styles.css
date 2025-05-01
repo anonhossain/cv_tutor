@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, #0F2027, #2C5364, #56ab2f, #a8e063);
+    background: linear-gradient(45deg, #205072, #329D9C, #7BE495, #CFF4D2);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     box-sizing: border-box;

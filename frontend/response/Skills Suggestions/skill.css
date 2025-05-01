@@ -8,10 +8,18 @@
 /* Body setup */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e5f2f7;
+    background: linear-gradient(45deg, #205072, #329D9C, #7BE495, #CFF4D2);background-color: #e5f2f7;
     color: #333;
     line-height: 1.6;
 }
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
 /* Back button styling */
 .back-button {
@@ -47,43 +55,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Result Header */
-.result-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
 
-.result-header h1 {
-    font-size: 2.5rem;
-    color: #4CAF50;
-    margin-top: -39px;
-}
-
-.result-header p {
-    font-size: 1.2rem;
-}
-
-.percentage {
-    font-weight: bold;
-}
-
-.green {
-    color: green;
-}
-
-.red {
-    color: red;
-}
-
-
-
-/* Donut Chart Styling */
-#donutChart {
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 
@@ -93,6 +65,7 @@ body {
     margin-right: 20px;
     font-size: 1.2rem;
     line-height: 1.6;
+    text-align: justify; 
 }
 
 .main-skills h2 {
@@ -144,18 +117,6 @@ body {
         width: 90%;
     }
 
-    .result-header h1 {
-        font-size: 2rem;
-    }
-
-    .result-header p {
-        font-size: 1rem;
-    }
-
-    .percentage {
-        font-size: 1.2rem;
-    }
-
     .main-skills h2,
     .viva-questions h2 {
         font-size: 1.5rem;
@@ -185,25 +146,13 @@ body {
         width: 100%;
     }
 
-    .result-header h1 {
-        font-size: 1.6rem;
-        margin-top: 4px;
-    }
-
-    .result-header p {
-        font-size: 1rem;
-    }
-
-    .percentage {
-        font-size: 1.2rem;
-    }
+    
 
     .main-skills h2,
     .viva-questions h2 {
         font-size: 22px;
         text-align: center;
-        text-decoration: underline;
-        text-decoration: underline;
+        
     }
 
     .main-skills p, .viva-questions .questions ul li {
