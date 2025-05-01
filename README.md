@@ -60,6 +60,29 @@ Screen Shots
 
 ![Show Match](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Match.png)
 
+Percentage Match
+-----
+
+![Show Missing Skills](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Skills.png)
+
+Missing Skill Suggestions
+-----
+
+![Recommended Projects](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Project%20Missing.png)
+
+Missing Skill Suggestions
+-----
+
+![Drafted Cover Letter and Email](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Cover%20Letter.png)
+---
+![Drafted Cover Letter and Email](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Draft%20Email.png)
+
+Drafted Cover Letter and Email
+-----
+![Possible Interview Questions](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/Generated%20Question.png)
+-----
+Possible Interview Questions
+
 ## 🛠️ Technologies Used
 
 - HTML/CSS/JS (Frontend)
