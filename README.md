@@ -2,6 +2,10 @@
 
 This project is an AI-powered tool designed to help job seekers enhance their resumes and job applications. It compares a resume with a job description to evaluate compatibility and provide personalized suggestions.
 
+## Video Showcase
+
+![Landing Page](https://github.com/anonhossain/cv_tutor/blob/main/screenshot/cv_tutor.mp4)
+
 ## 🔥 Features
 
 - ✅ **Landing Page Interface** – Modern, user-friendly entry point to the platform.
