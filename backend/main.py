@@ -4,7 +4,7 @@ from views import api
 
 app = FastAPI()
 
-origins = ["http://127.0.0.1:8080/frontend/"]
+origins = ["http://127.0.0.1:5500/frontend/"]
 # Set up CORS middleware
 app.add_middleware(
     CORSMiddleware,
