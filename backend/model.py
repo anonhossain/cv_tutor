@@ -4,13 +4,24 @@ import os
 import shutil
 import google.generativeai as genai
 import PyPDF2 as pdf
-import env
+#import env
+from dotenv import load_dotenv
 from backend.prompt import *  # Import the prompt functions
 
-CV_FILE = env.CV_FILE
-JD_FILE = env.JD_FILE
 
-genai.configure(api_key=env.GOOGLE_API_KEY)
+load_dotenv()
+
+# CV_FILE = env.CV_FILE
+# JD_FILE = env.JD_FILE
+
+# genai.configure(api_key=env.GOOGLE_API_KEY)
+
+# Access variables from the .env file
+CV_FILE = os.getenv('CV_FILE')
+JD_FILE = os.getenv('JD_FILE')
+
+# Configure your API key from the .env file
+genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
 class Model:
     @staticmethod

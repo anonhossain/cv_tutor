@@ -3,10 +3,17 @@
 import os
 import shutil
 from fastapi import UploadFile
-import env
+#import env
+from dotenv import load_dotenv
 
-CV_FILE = env.CV_FILE_DIR
-JD_FILE = env.JD_FILE_DIR
+load_dotenv()
+
+# Access variables from the .env file
+CV_FILE = os.getenv('CV_FILE')
+JD_FILE = os.getenv('JD_FILE')
+
+# CV_FILE = env.CV_FILE_DIR
+# JD_FILE = env.JD_FILE_DIR
 
 # Make sure folders exist
 os.makedirs(CV_FILE, exist_ok=True)
