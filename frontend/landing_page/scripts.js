@@ -1,7 +1,7 @@
 // Function for the button click event (just for future functionality)
 function startApp() {
     setTimeout(function() {
-        window.location.href = '/frontend/dashboard/hr_body.html';
+        window.location.href = '/dashboard/hr_body.html';
     }, 500); // Delay of 500ms (0.5 seconds) before navigating
 }
 
