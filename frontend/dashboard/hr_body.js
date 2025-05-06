@@ -38,7 +38,7 @@ document.getElementById("upload-form").addEventListener("submit", async function
 
         // Parse the response JSON
         const result = await response.json();
-        console.log(result);
+        // console.log(result);
         alert("Upload successful!");
     } catch (error) {
         console.error("Upload error:", error);
@@ -69,7 +69,7 @@ document.getElementById("analyze_existing").addEventListener("click", async () =
 
         // Parse the response
         const result = await response.json();
-        console.log(result);
+        // console.log(result);
 
         if (result && result.result) {
             // Redirect to response.html with the result as a query parameter
@@ -89,7 +89,7 @@ document.getElementById("analyze_existing").addEventListener("click", async () =
 
 // Handle 'Skill Suggestions' button
 document.getElementById("skills_suggestion").addEventListener("click", async () => {
-    console.log("Skill Suggestion button clicked.");  // Check if this is logged
+    // console.log("Skill Suggestion button clicked.");  // Check if this is logged
     showLoading();  // Show loading spinner
 
     try {
@@ -106,19 +106,19 @@ document.getElementById("skills_suggestion").addEventListener("click", async () 
         }
 
         const result = await response.json();
-        console.log(result); // Check the API result in console
+        // console.log(result); // Check the API result in console
 
         // Make sure the response contains the required result
         if (result && result.result) {
             // Check if the URL is correct and log to confirm
-            console.log("Redirecting with result:", result.result);
+            // console.log("Redirecting with result:", result.result);
 
             // URL encoding the result properly
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
             const redirectUrl = `/frontend/response/Skills%20Suggestions/skill.html?result=${encodedResult}`;
-            console.log("Redirection URL:", redirectUrl);
+            // console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
             window.location.href = redirectUrl;
@@ -139,7 +139,7 @@ document.getElementById("skills_suggestion").addEventListener("click", async () 
 
 // Handle 'Project Suggestion' button click
 document.getElementById("project_suggestion").addEventListener("click", async () => {
-    console.log("Project Suggestion button clicked.");  // Check if this is logged
+    // console.log("Project Suggestion button clicked.");  // Check if this is logged
     showLoading();  // Show loading spinner
 
     try {
@@ -156,19 +156,19 @@ document.getElementById("project_suggestion").addEventListener("click", async ()
         }
 
         const result = await response.json();
-        console.log(result); // Check the API result in console
+        // console.log(result); // Check the API result in console
 
         // Make sure the response contains the required result
         if (result && result.result) {
             // Check if the URL is correct and log to confirm
-            console.log("Redirecting with result:", result.result);
+            // console.log("Redirecting with result:", result.result);
 
             // URL encoding the result properly
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
             const redirectUrl = `/frontend/response/Project%20Suggestion/Psuggestion.html?result=${encodedResult}`;
-            console.log("Redirection URL:", redirectUrl);
+            // console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
             window.location.href = redirectUrl;
@@ -191,7 +191,7 @@ document.getElementById("project_suggestion").addEventListener("click", async ()
 
 // Handle 'Draft Cover Letter' button click
 document.getElementById("draft_cover_letter").addEventListener("click", async () => {
-    console.log("Draft Cover Letter button clicked.");  // Check if this is logged
+    // console.log("Draft Cover Letter button clicked.");  // Check if this is logged
     showLoading();  // Show loading spinner
 
     try {
@@ -208,19 +208,19 @@ document.getElementById("draft_cover_letter").addEventListener("click", async ()
         }
 
         const result = await response.json();
-        console.log(result); // Check the API result in console
+        // console.log(result); // Check the API result in console
 
         // Make sure the response contains the required result (cover letter text)
         if (result && result.result) {
             // Check if the URL is correct and log to confirm
-            console.log("Redirecting with result:", result.result);
+            // console.log("Redirecting with result:", result.result);
 
             // URL encode the result properly
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
             const redirectUrl = `/frontend/response/Cover%20Letter/coverLetter.html?result=${encodedResult}`;
-            console.log("Redirection URL:", redirectUrl);
+            // console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
             window.location.href = redirectUrl;
@@ -240,7 +240,7 @@ document.getElementById("draft_cover_letter").addEventListener("click", async ()
 
 // Handle 'Draft Email' button click
 document.getElementById("draft_email").addEventListener("click", async () => {
-    console.log("Draft Email button clicked.");  // Check if this is logged
+    // console.log("Draft Email button clicked.");  // Check if this is logged
     showLoading();  // Show loading spinner
 
     try {
@@ -257,19 +257,19 @@ document.getElementById("draft_email").addEventListener("click", async () => {
         }
 
         const result = await response.json();
-        console.log(result); // Check the API result in console
+        // console.log(result); // Check the API result in console
 
         // Make sure the response contains the required result (draft email content)
         if (result && result.result) {
             // Check if the URL is correct and log to confirm
-            console.log("Redirecting with result:", result.result);
+            // console.log("Redirecting with result:", result.result);
 
             // URL encode the result properly
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
             const redirectUrl = `/frontend/response/draftEmail/draftEmail.html?result=${encodedResult}`;
-            console.log("Redirection URL:", redirectUrl);
+            // console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
             window.location.href = redirectUrl;
@@ -291,7 +291,7 @@ document.getElementById("draft_email").addEventListener("click", async () => {
 
 // Handle 'Question Generation' button click
 document.getElementById("question_generation").addEventListener("click", async () => {
-    console.log("Question Generation button clicked.");  // Check if this is logged
+    // console.log("Question Generation button clicked.");  // Check if this is logged
     showLoading();  // Show loading spinner
 
     try {
@@ -308,19 +308,19 @@ document.getElementById("question_generation").addEventListener("click", async (
         }
 
         const result = await response.json();
-        console.log(result); // Check the API result in console
+        // console.log(result); // Check the API result in console
 
         // Make sure the response contains the required result (generated questions)
         if (result && result.result) {
             // Check if the URL is correct and log to confirm
-            console.log("Redirecting with result:", result.result);
+            // console.log("Redirecting with result:", result.result);
 
             // URL encode the result properly
             const encodedResult = encodeURIComponent(result.result);
 
             // Ensure the URL is correct and log the full URL
             const redirectUrl = `/frontend/response/Question%20Generator/questionGen.html?result=${encodedResult}`;
-            console.log("Redirection URL:", redirectUrl);
+            // console.log("Redirection URL:", redirectUrl);
 
             // Now perform the redirection
             window.location.href = redirectUrl;
@@ -358,7 +358,7 @@ async function sendAction(action) {
         }
 
         const result = await response.json();
-        console.log(result);
+        // console.log(result);
         alert(`${action.replace("_", " ")} completed!`);
     } catch (error) {
         console.error("Action error:", error);
