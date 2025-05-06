@@ -1,11 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import backend
+from fastapi.staticfiles import StaticFiles
 from backend.views import api
 
 app = FastAPI()
 
-origins = ["http://127.0.0.1:5500/frontend/"]
+# Serve static frontend files
+app.mount("/frontend", StaticFiles(directory="frontend"), name="frontend")
+
+# Allow frontend to communicate with backend (adjust origin if needed)
+origins = ["http://127.0.0.1:5500"]
 # Set up CORS middleware
 app.add_middleware(
     CORSMiddleware,
