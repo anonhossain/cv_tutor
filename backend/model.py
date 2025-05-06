@@ -26,7 +26,7 @@ genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 class Model:
     @staticmethod
     def get_gemini_response(prompt):
-        model_instance = genai.GenerativeModel(env.MODEL)
+        model_instance = genai.GenerativeModel(os.getenv('MODEL'))
         response = model_instance.generate_content(prompt)
         return response.text
 

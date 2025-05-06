@@ -3,7 +3,7 @@ from pyexpat import model
 from fastapi import APIRouter, File, Form, UploadFile
 
 from backend.model import Model
-from files_upload import save_uploaded_files
+from backend.files_upload import save_uploaded_files
 
 api = APIRouter(prefix="/api")
 
