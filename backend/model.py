@@ -5,7 +5,7 @@ import shutil
 import google.generativeai as genai
 import PyPDF2 as pdf
 import env
-from prompt import *  # Import the prompt functions
+from backend.prompt import *  # Import the prompt functions
 
 CV_FILE = env.CV_FILE
 JD_FILE = env.JD_FILE
